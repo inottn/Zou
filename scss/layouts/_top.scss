@@ -1,0 +1,100 @@
+@import "../common/function";
+
+.top {
+  background-image: url("../images/top/top-bg.png");
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding-left: responsive(120);
+  height: responsive(788);
+  
+  .nav {
+    font-size: 0;
+
+    .logo {
+      vertical-align: bottom;
+      display: inline-block;
+      margin-top: responsive(47);
+      width: responsive(123);
+	    height: responsive(43);
+      background-image: url("../images/top/logo.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .nav-list {
+      display: inline-flex;
+      justify-content: space-between;
+      margin-top: responsive(47);
+      margin-left: responsive(105);
+      width: responsive(440);
+
+      .nav-item {
+        padding: responsive(12);
+        font-size: responsive(16);
+        font-weight: bold;
+        color: #000000;
+        cursor: pointer;
+        transition: color .4s;
+
+        &:hover, &.nav-item-active{
+          color: #66bb6a;
+        }
+      }
+    }
+
+    .sign-up-btn {
+      float: right;
+      margin-top: responsive(40);
+      margin-right: responsive(120);
+      width: responsive(128);
+      height: responsive(48);
+      border-radius: responsive(5);
+      border: solid responsive(1) #ffffff;
+      background-color: transparent;
+      font-size: responsive(16);
+      color: #f1f8e9;
+
+      .sign-up-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: responsive(8);
+        width: responsive(16);
+        height: responsive(16);
+        background-image: url("../images/top/sign-up-icon.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .top-title {
+    margin-top: responsive(140);
+    width: responsive(473);
+    font-size: responsive(46);
+    font-weight: blod;
+    line-height: responsive(64);
+    letter-spacing: responsive(0);
+    color: #000000;
+  }
+
+  .top-text {
+    margin-top: responsive(40);
+    width: responsive(473);
+    font-size: responsive(18);
+    line-height: responsive(32);
+    letter-spacing: responsive(0);
+    color: #263238;
+  }
+
+  .invest-now-btn {
+    margin-top: responsive(54);
+    width: responsive(144);
+    height: responsive(48);
+    background-color: #66bb6a;
+    border-radius: responsive(5);
+    box-shadow: 0 responsive(13) responsive(20) 0 rgba(118,196,125,0.41);
+    font-size: responsive(18);
+    color: #ffffff;
+  }
+}
