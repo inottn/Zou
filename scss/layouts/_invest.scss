@@ -1,0 +1,101 @@
+@import "../common/function";
+
+.invest {
+  margin-top: responsive(84);
+  margin-left: responsive(120);
+  margin-right: responsive(120);
+  // padding-bottom: responsive(104);
+  padding-left: responsive(72);
+  padding-right: responsive(72);
+
+  .invest-title {
+    font-size: responsive(36);
+    font-weight: bold;
+    letter-spacing: responsive(0);
+    color: #000000;
+  }
+
+  .invest-text {
+    margin-top: responsive(18);
+    width: responsive(704);
+    font-size: responsive(18);
+    line-height: responsive(32);
+    letter-spacing: responsive(0);
+    color: #324148;
+  }
+
+  .invest-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: responsive(94);
+
+    .invest-item {
+      padding-top: responsive(39);
+      padding-left: responsive(72);
+      width: responsive(512);
+      height: responsive(416);
+      background-color: #324148;
+      border-radius: responsive(5);
+
+      &:first-child {
+        background-image: url("../images/invest/invest-item-bg1.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      &:last-child {
+        background-image: url("../images/invest/invest-item-bg2.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      .invest-item-label {
+        font-size: responsive(14);
+        letter-spacing: responsive(2.8);
+        color: #66bb6a;
+
+        &::after {
+          content: "";
+          display: block;
+          margin-top: responsive(17);
+          width: responsive(56);
+          height: responsive(4);
+          background-color: #ffffff;
+          border-radius: responsive(2);
+        }
+      }
+
+      .invest-item-title {
+        margin-top: responsive(61);
+        width: responsive(248);
+        height: responsive(75);
+        font-size: responsive(31);
+        font-weight: bold;
+        line-height: responsive(40);
+        letter-spacing: responsive(0);
+        color: #ffffff;
+      }
+
+      .invest-item-text {
+        margin-top: responsive(18);
+        width: responsive(248);
+        height: responsive(46);
+        font-size: responsive(16);
+        line-height: responsive(24);
+        letter-spacing: responsive(0);
+        color: #e2efd2;
+      }
+
+      .invest-item-btn {
+        margin-top: responsive(28);
+        width: responsive(200);
+        height: responsive(48);
+        background-color: #ffffff;
+        border-radius: responsive(5);
+        font-size: responsive(18);
+        letter-spacing: responsive(0);
+        color: #66bb6a;
+      }
+    }
+  }
+}

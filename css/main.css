@@ -104,7 +104,7 @@
   padding-bottom: 7.22222vw;
   padding-left: 5vw;
   padding-right: 5vw;
-  border-bottom: 2px solid #f7f7f7;
+  border-bottom: 0.13889vw solid #f7f7f7;
 }
 
 .opportunities .opportunities-title {
@@ -186,6 +186,105 @@
 
 .opportunities .opportunities-list .opportunity-item.opportunity-item-active .opportunity-text {
   color: #e8f5e9;
+}
+
+.invest {
+  margin-top: 5.83333vw;
+  margin-left: 8.33333vw;
+  margin-right: 8.33333vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.invest .invest-title {
+  font-size: 2.5vw;
+  font-weight: bold;
+  letter-spacing: 0vw;
+  color: #000000;
+}
+
+.invest .invest-text {
+  margin-top: 1.25vw;
+  width: 48.88889vw;
+  font-size: 1.25vw;
+  line-height: 2.22222vw;
+  letter-spacing: 0vw;
+  color: #324148;
+}
+
+.invest .invest-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.52778vw;
+}
+
+.invest .invest-list .invest-item {
+  padding-top: 2.70833vw;
+  padding-left: 5vw;
+  width: 35.55556vw;
+  height: 28.88889vw;
+  background-color: #324148;
+  border-radius: 0.34722vw;
+}
+
+.invest .invest-list .invest-item:first-child {
+  background-image: url("../images/invest/invest-item-bg1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.invest .invest-list .invest-item:last-child {
+  background-image: url("../images/invest/invest-item-bg2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.invest .invest-list .invest-item .invest-item-label {
+  font-size: 0.97222vw;
+  letter-spacing: 0.19444vw;
+  color: #66bb6a;
+}
+
+.invest .invest-list .invest-item .invest-item-label::after {
+  content: "";
+  display: block;
+  margin-top: 1.18056vw;
+  width: 3.88889vw;
+  height: 0.27778vw;
+  background-color: #ffffff;
+  border-radius: 0.13889vw;
+}
+
+.invest .invest-list .invest-item .invest-item-title {
+  margin-top: 4.23611vw;
+  width: 17.22222vw;
+  height: 5.20833vw;
+  font-size: 2.15278vw;
+  font-weight: bold;
+  line-height: 2.77778vw;
+  letter-spacing: 0vw;
+  color: #ffffff;
+}
+
+.invest .invest-list .invest-item .invest-item-text {
+  margin-top: 1.25vw;
+  width: 17.22222vw;
+  height: 3.19444vw;
+  font-size: 1.11111vw;
+  line-height: 1.66667vw;
+  letter-spacing: 0vw;
+  color: #e2efd2;
+}
+
+.invest .invest-list .invest-item .invest-item-btn {
+  margin-top: 1.94444vw;
+  width: 13.88889vw;
+  height: 3.33333vw;
+  background-color: #ffffff;
+  border-radius: 0.34722vw;
+  font-size: 1.25vw;
+  letter-spacing: 0vw;
+  color: #66bb6a;
 }
 
 * {
