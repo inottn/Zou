@@ -97,12 +97,103 @@
   color: #ffffff;
 }
 
+.opportunities {
+  margin-top: 1.66667vw;
+  margin-left: 8.33333vw;
+  margin-right: 8.33333vw;
+  padding-bottom: 7.22222vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.opportunities .opportunities-title {
+  margin: 0 auto;
+  width: 22.5vw;
+  height: 4.44444vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  letter-spacing: 0vw;
+  color: #000000;
+  text-align: center;
+}
+
+.opportunities .opportunities-text {
+  margin: 0 auto;
+  margin-top: 0.97222vw;
+  width: 38.88889vw;
+  font-size: 1.25vw;
+  line-height: 2.22222vw;
+  letter-spacing: 0vw;
+  color: #324148;
+  text-align: center;
+}
+
+.opportunities .opportunities-list {
+  margin-top: 6.94444vw;
+  display: flex;
+  justify-content: space-between;
+  width: 73.33333vw;
+}
+
+.opportunities .opportunities-list .opportunity-item {
+  padding-top: 3.33333vw;
+  padding-bottom: 3.47222vw;
+  padding-left: 2.77778vw;
+  padding-right: 2.77778vw;
+  width: 22.77778vw;
+  height: 22.77778vw;
+  background-color: #ffffff;
+  box-shadow: -0.06944vw 0.90278vw 1.38889vw 0vw #f0f2f4;
+  border-radius: 0.34722vw;
+}
+
+.opportunities .opportunities-list .opportunity-item .opportunity-image {
+  width: 5.41667vw;
+  height: 4.44444vw;
+}
+
+.opportunities .opportunities-list .opportunity-item .opportunity-title {
+  margin-top: 1.52778vw;
+  width: 16.11111vw;
+  font-size: 1.25vw;
+  font-weight: bold;
+  line-height: 1.66667vw;
+  letter-spacing: 0vw;
+  color: #263238;
+}
+
+.opportunities .opportunities-list .opportunity-item .opportunity-text {
+  margin-top: 1.66667vw;
+  width: 17.22222vw;
+  height: 6.66667vw;
+  font-size: 1.11111vw;
+  font-weight: 300;
+  line-height: 1.66667vw;
+  letter-spacing: 0vw;
+  color: #263238;
+  overflow: hidden;
+}
+
+.opportunities .opportunities-list .opportunity-item.opportunity-item-active {
+  background-color: #66bb6a;
+  box-shadow: 0vw 1.73611vw 1.73611vw 0vw rgba(118, 196, 125, 0.31);
+}
+
+.opportunities .opportunities-list .opportunity-item.opportunity-item-active .opportunity-title {
+  color: #ffffff;
+}
+
+.opportunities .opportunities-list .opportunity-item.opportunity-item-active .opportunity-text {
+  color: #e8f5e9;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Chivo";
 }
 
-html, body, button, ul, li {
+html, body, button, ul, li, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }

@@ -1,0 +1,92 @@
+@import "../common/function";
+
+.opportunities {
+  margin-top: responsive(24);
+  margin-left: responsive(120);
+  margin-right: responsive(120);
+  padding-bottom: responsive(104);
+  padding-left: responsive(72);
+  padding-right: responsive(72);
+  border-bottom: 2px solid #f7f7f7;
+
+  .opportunities-title {
+    margin: 0 auto;
+    width: responsive(324);
+    height: responsive(64);
+    font-size: responsive(36);
+    font-weight: bold;
+    letter-spacing: responsive(0);
+    color: #000000;
+    text-align: center;
+  }
+
+  .opportunities-text {
+    margin: 0 auto;
+    margin-top: responsive(14);
+    width: responsive(560);
+    font-size: responsive(18);
+    line-height: responsive(32);
+    letter-spacing: responsive(0);
+    color: #324148;
+    text-align: center;
+  }
+
+  .opportunities-list {
+    margin-top: responsive(100);
+    display: flex;
+    justify-content: space-between;
+    width: responsive(1056);
+
+    .opportunity-item {
+      padding-top: responsive(48);
+      padding-bottom: responsive(50);
+      padding-left: responsive(40);
+      padding-right: responsive(40);
+      width: responsive(328);
+      height: responsive(328);
+      background-color: #ffffff;
+      box-shadow: responsive(-1) responsive(13) responsive(20) responsive(0) #f0f2f4;
+      border-radius: responsive(5);
+
+      .opportunity-image {
+        width: responsive(78);
+        height: responsive(64);
+      }
+
+      .opportunity-title {
+        margin-top: responsive(22);
+        width: responsive(232);
+        font-size: responsive(18);
+        font-weight: bold;
+        line-height: responsive(24);
+        letter-spacing: responsive(0);
+        color: #263238;
+      }
+
+      .opportunity-text {
+        margin-top: responsive(24);
+        width: responsive(248);
+        height: responsive(96);
+        font-size: responsive(16);
+        font-weight: 300;
+        line-height: responsive(24);
+        letter-spacing: responsive(0);
+        color: #263238;
+        overflow: hidden;
+      }
+
+      &.opportunity-item-active {
+        background-color: #66bb6a;
+        box-shadow: responsive(0) responsive(25) responsive(25) responsive(0) rgba(118, 196, 125, 0.31);
+
+        .opportunity-title {
+          color: #ffffff;
+        }
+
+        .opportunity-text {
+          color: #e8f5e9;
+        }
+      }
+    }
+  }
+}

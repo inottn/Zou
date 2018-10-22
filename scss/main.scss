@@ -1,6 +1,7 @@
 @import "./common/var";
 @import "./common/function";
 @import "./layouts/top";
+@import "./layouts/opportunities";
 
 // @font-face {
 //   font-family: Roboto;
@@ -25,7 +26,7 @@
   font-family: "Chivo";
 }
 
-html, body, button, ul, li {
+html, body, button, ul, li, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
