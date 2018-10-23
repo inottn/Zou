@@ -1,0 +1,85 @@
+@import "../common/function";
+
+.work {
+  margin: 0 auto;
+  margin-top: responsive(117);
+  padding: responsive(106) responsive(248) 0;
+  width: responsive(1200);
+  height: responsive(720);
+  background-image: url("../images/work/work-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .work-title {
+    font-size: responsive(36);
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .work-text {
+    margin: 0 auto;
+    margin-top: responsive(44);
+    font-size: responsive(18);
+    line-height: responsive(32);
+    text-align: center;
+    color: #e8f5e9;
+  }
+
+  .work-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: responsive(60);
+
+    .work-step {
+      width: responsive(72);
+      height: responsive(72);
+      border: solid responsive(2) #b3dcb6;
+      border-radius: 50%;
+      font-size: responsive(18);
+      line-height: responsive(68);
+      text-align: center;
+      color: #d1ead3;
+
+      &::before {
+        display: block;
+        content: "";
+        height: responsive(2);
+        width: responsive(139);
+        transform: translate(responsive(70), responsive(35));
+        background-color: #b3dcb6;
+      }
+
+      &:last-child::before {
+        content: none!important;
+      }
+
+      &.work-step-active {
+        background-color: #ecf7ed;
+        border: none;
+        box-shadow: responsive(-1) responsive(13) responsive(20) responsive(0) #5ab963;
+        line-height: responsive(72);
+        color: #66bb6a;
+
+        &::before {
+          display: block;
+          content: "";
+          height: responsive(2);
+          width: responsive(139);
+          transform: translate(responsive(72), responsive(37));
+          background-color: #b3dcb6;
+        }
+      }
+
+      .work-step-text {
+        width: 280px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        text-align: left;
+        color: #ffffff;
+        transform: translateY(responsive(60));
+      }
+    }
+  }
+}
