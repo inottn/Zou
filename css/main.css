@@ -520,6 +520,38 @@
   color: #8aa1ac;
 }
 
+.start {
+  margin: 12.77778vw 13.33333vw 0;
+  padding: 5.41667vw 0;
+  background-color: #ffffff;
+  box-shadow: -0.06944vw 1.73611vw 1.38889vw 0vw #f2f2f2;
+  border-radius: 0.34722vw;
+}
+
+.start .start-title {
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.start .start-title span {
+  color: #63bc66;
+}
+
+.start .start-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.77778vw;
+  width: 18.68056vw;
+  height: 3.33333vw;
+  background-color: #66bb6a;
+  box-shadow: 0 0.90278vw 1.38889vw 0 rgba(118, 196, 125, 0.41);
+  border-radius: 0.34722vw;
+  font-size: 1.25vw;
+  color: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Chivo";

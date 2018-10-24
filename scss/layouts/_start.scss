@@ -1,0 +1,33 @@
+@import "../common/function";
+
+.start {
+  margin: responsive(184) responsive(192) 0;
+  padding: responsive(78) 0;
+  background-color: #ffffff;
+	box-shadow: responsive(-1) responsive(25) responsive(20) responsive(0) #f2f2f2;
+  border-radius: responsive(5);
+  
+  .start-title {
+    font-size: responsive(36);
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+
+    span {
+	    color: #63bc66;
+    }
+  }
+
+  .start-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: responsive(40);
+    width: responsive(269);
+    height: responsive(48);
+    background-color: #66bb6a;
+    box-shadow: 0 responsive(13) responsive(20) 0 rgba(118,196,125,0.41);
+    border-radius: responsive(5);
+    font-size: responsive(18);
+    color: #ffffff;
+  }
+}
