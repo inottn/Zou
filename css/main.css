@@ -552,6 +552,93 @@
   color: #ffffff;
 }
 
+.footer {
+  margin-top: 8.75vw;
+  padding: 0 13.33333vw;
+}
+
+.footer .footer-site-links-and-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-site-links-and-info .site-links li:first-child {
+  font-size: 1.11111vw;
+  font-weight: bold;
+  color: #000000;
+}
+
+.footer .footer-site-links-and-info .site-links li {
+  padding: 0.83333vw 0;
+  font-size: 1.11111vw;
+  color: #607d8b;
+}
+
+.footer .footer-site-links-and-info .site-info {
+  padding-top: 3.19444vw;
+  padding-bottom: 3.19444vw;
+  padding-left: 3.88889vw;
+  width: 19.44444vw;
+  background-color: #66bb6a;
+  border-radius: 0.34722vw;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-title {
+  font-size: 1.25vw;
+  font-weight: bold;
+  color: #eff7e7;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-text {
+  margin-top: 1.52778vw;
+  font-size: 1.11111vw;
+  color: #edf6e5;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-email {
+  margin-top: 0.41667vw;
+  font-size: 1.25vw;
+  font-weight: bold;
+  color: #edf6e5;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-btn {
+  margin-top: 1.52778vw;
+  padding: 0.83333vw 1.66667vw;
+  background-color: #ffffff;
+  border-radius: 0.34722vw;
+  font-size: 1.11111vw;
+  color: #66BB6A;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-btn .icon-user {
+  margin-right: 0.41667vw;
+  font-size: 1.11111vw;
+}
+
+.footer .footer-logo-and-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 8.19444vw;
+  padding-bottom: 5.97222vw;
+  padding-top: 4.72222vw;
+  border-top: 0.13889vw solid #eeeeee;
+}
+
+.footer .footer-logo-and-copyright .footer-logo {
+  width: 8.33333vw;
+  height: 2.5vw;
+  background-image: url("../images/top/logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.footer .footer-logo-and-copyright .footer-copyright {
+  font-size: 0.97222vw;
+  color: #607d8b;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Chivo";

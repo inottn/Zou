@@ -1,0 +1,90 @@
+@import "../common/function";
+
+.footer {
+  margin-top: responsive(126);
+  padding: 0 responsive(192);
+
+  .footer-site-links-and-info {
+    display: flex;
+    justify-content: space-between;
+
+    .site-links {
+      li:first-child {
+        font-size: responsive(16);
+        font-weight: bold;
+        color: #000000;
+      }
+
+      li {
+        padding: responsive(12) 0;
+        font-size: responsive(16);
+        color: #607d8b;
+      }
+    }
+
+    .site-info {
+      padding-top: responsive(46);
+      padding-bottom: responsive(46);
+      padding-left: responsive(56);
+      width: responsive(280);
+      background-color: #66bb6a;
+      border-radius: responsive(5);
+
+      .site-info-title {
+        font-size: responsive(18);
+        font-weight: bold;
+        color: #eff7e7;
+      }
+
+      .site-info-text {
+        margin-top: responsive(22);
+        font-size: responsive(16);
+        color: #edf6e5;
+      }
+
+      .site-info-email {
+        margin-top: responsive(6);
+        font-size: responsive(18);
+        font-weight: bold;
+        color: #edf6e5;
+      }
+      
+      .site-info-btn {
+        margin-top: responsive(22);
+        padding: responsive(12) responsive(24);
+        background-color: #ffffff;
+        border-radius: responsive(5);
+        font-size: responsive(16);
+        color: #66BB6A;
+
+        .icon-user {
+          margin-right: responsive(6);
+          font-size: responsive(16);
+        }
+      }
+    }
+  }
+
+  .footer-logo-and-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: responsive(118);
+    padding-bottom: responsive(86);
+    padding-top: responsive(68);
+    border-top: responsive(2) solid #eeeeee;
+
+    .footer-logo {
+      width: responsive(120);
+      height: responsive(36);
+      background-image: url("../images/top/logo.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .footer-copyright {
+      font-size: responsive(14);
+      color: #607d8b;
+    }
+  }
+}
