@@ -15,7 +15,6 @@
     height: responsive(64);
     font-size: responsive(36);
     font-weight: bold;
-    letter-spacing: responsive(0);
     color: #000000;
     text-align: center;
   }
@@ -26,7 +25,6 @@
     width: responsive(560);
     font-size: responsive(18);
     line-height: responsive(32);
-    letter-spacing: responsive(0);
     color: #324148;
     text-align: center;
   }
@@ -59,7 +57,7 @@
         font-size: responsive(18);
         font-weight: bold;
         line-height: responsive(24);
-        letter-spacing: responsive(0);
+  
         color: #263238;
       }
 
@@ -70,7 +68,7 @@
         font-size: responsive(16);
         font-weight: 300;
         line-height: responsive(24);
-        letter-spacing: responsive(0);
+  
         color: #263238;
         overflow: hidden;
       }

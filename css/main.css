@@ -50,21 +50,26 @@
   width: 8.88889vw;
   height: 3.33333vw;
   border-radius: 0.34722vw;
-  border: solid 0.06944vw #ffffff;
+  border: solid 0.13889vw #ffffff;
   background-color: transparent;
   font-size: 1.11111vw;
   color: #f1f8e9;
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), background-color 0.2s, color 0.2s;
 }
 
-.top .nav .sign-up-btn .sign-up-icon {
-  display: inline-block;
-  vertical-align: middle;
+.top .nav .sign-up-btn:hover {
+  background-color: #ffffff;
+  color: #66bb6a;
+}
+
+.top .nav .sign-up-btn:active {
+  transition: transform .2s;
+  transform: scale(0.9);
+}
+
+.top .nav .sign-up-btn .icon-user {
   margin-right: 0.55556vw;
-  width: 1.11111vw;
-  height: 1.11111vw;
-  background-image: url("../images/top/sign-up-icon.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  font-size: 1.11111vw;
 }
 
 .top .top-title {
@@ -73,7 +78,6 @@
   font-size: 3.19444vw;
   font-weight: blod;
   line-height: 4.44444vw;
-  letter-spacing: 0vw;
   color: #000000;
 }
 
@@ -82,7 +86,6 @@
   width: 32.84722vw;
   font-size: 1.25vw;
   line-height: 2.22222vw;
-  letter-spacing: 0vw;
   color: #263238;
 }
 
@@ -92,9 +95,19 @@
   height: 3.33333vw;
   background-color: #66bb6a;
   border-radius: 0.34722vw;
-  box-shadow: 0 0.90278vw 1.38889vw 0 rgba(118, 196, 125, 0.41);
+  box-shadow: 0 0.90278vw 1.38889vw 0 rgba(118, 196, 125, 0.4);
   font-size: 1.25vw;
   color: #ffffff;
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), box-shadow 0.2s;
+}
+
+.top .invest-now-btn:hover {
+  box-shadow: rgba(118, 196, 125, 0.6) 0 6px 9px 0;
+}
+
+.top .invest-now-btn:active {
+  transition: transform .2s, box-shadow .2s;
+  transform: scale(0.9);
 }
 
 .opportunities {
@@ -113,7 +126,6 @@
   height: 4.44444vw;
   font-size: 2.5vw;
   font-weight: bold;
-  letter-spacing: 0vw;
   color: #000000;
   text-align: center;
 }
@@ -124,7 +136,6 @@
   width: 38.88889vw;
   font-size: 1.25vw;
   line-height: 2.22222vw;
-  letter-spacing: 0vw;
   color: #324148;
   text-align: center;
 }
@@ -159,7 +170,6 @@
   font-size: 1.25vw;
   font-weight: bold;
   line-height: 1.66667vw;
-  letter-spacing: 0vw;
   color: #263238;
 }
 
@@ -170,7 +180,6 @@
   font-size: 1.11111vw;
   font-weight: 300;
   line-height: 1.66667vw;
-  letter-spacing: 0vw;
   color: #263238;
   overflow: hidden;
 }
@@ -199,7 +208,6 @@
 .invest .invest-title {
   font-size: 2.5vw;
   font-weight: bold;
-  letter-spacing: 0vw;
   color: #000000;
 }
 
@@ -208,7 +216,6 @@
   width: 48.88889vw;
   font-size: 1.25vw;
   line-height: 2.22222vw;
-  letter-spacing: 0vw;
   color: #324148;
 }
 
@@ -262,7 +269,6 @@
   font-size: 2.15278vw;
   font-weight: bold;
   line-height: 2.77778vw;
-  letter-spacing: 0vw;
   color: #ffffff;
 }
 
@@ -272,7 +278,6 @@
   height: 3.19444vw;
   font-size: 1.11111vw;
   line-height: 1.66667vw;
-  letter-spacing: 0vw;
   color: #e2efd2;
 }
 
@@ -282,9 +287,19 @@
   height: 3.33333vw;
   background-color: #ffffff;
   border-radius: 0.34722vw;
+  box-shadow: 0 0.90278vw 1.38889vw 0 rgba(255, 255, 255, 0.04);
   font-size: 1.25vw;
-  letter-spacing: 0vw;
   color: #66bb6a;
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), box-shadow 0.2s;
+}
+
+.invest .invest-list .invest-item .invest-item-btn:hover {
+  box-shadow: rgba(255, 255, 255, 0.09) 0 6px 9px 0;
+}
+
+.invest .invest-list .invest-item .invest-item-btn:active {
+  transition: transform .2s, box-shadow .2s;
+  transform: scale(0.9);
 }
 
 .work {
@@ -502,7 +517,17 @@
 .testimonials .testimonial-arrow-btn-group .testimonial-left-arrow-btn {
   margin-right: 1.11111vw;
   background-color: #66bb6a;
-  box-shadow: 0vw 1.73611vw 1.73611vw 0vw rgba(118, 196, 125, 0.31);
+  box-shadow: 0vw 1.04167vw 1.38889vw 0vw rgba(118, 196, 125, 0.31);
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), box-shadow 0.2s;
+}
+
+.testimonials .testimonial-arrow-btn-group .testimonial-left-arrow-btn:hover {
+  box-shadow: rgba(118, 196, 125, 0.31) 0 6px 9px 0;
+}
+
+.testimonials .testimonial-arrow-btn-group .testimonial-left-arrow-btn:active {
+  transition: transform .2s, box-shadow .2s;
+  transform: scale(0.9);
 }
 
 .testimonials .testimonial-arrow-btn-group .testimonial-left-arrow-btn .icon-arrow-left {
@@ -512,7 +537,17 @@
 
 .testimonials .testimonial-arrow-btn-group .testimonial-right-arrow-btn {
   background-color: #ffffff;
-  box-shadow: -0.06944vw 0.90278vw 1.38889vw 0vw #f0f2f4;
+  box-shadow: 0vw 1.04167vw 1.38889vw 0vw #f0f2f4;
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), box-shadow 0.2s;
+}
+
+.testimonials .testimonial-arrow-btn-group .testimonial-right-arrow-btn:hover {
+  box-shadow: #f0f2f4 0 6px 9px 0;
+}
+
+.testimonials .testimonial-arrow-btn-group .testimonial-right-arrow-btn:active {
+  transition: transform .2s, box-shadow .2s;
+  transform: scale(0.9);
 }
 
 .testimonials .testimonial-arrow-btn-group .testimonial-right-arrow-btn .icon-arrow-right {
@@ -550,6 +585,16 @@
   border-radius: 0.34722vw;
   font-size: 1.25vw;
   color: #ffffff;
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), box-shadow 0.2s;
+}
+
+.start .start-btn:hover {
+  box-shadow: rgba(118, 196, 125, 0.6) 0 6px 9px 0;
+}
+
+.start .start-btn:active {
+  transition: transform .2s, box-shadow .2s;
+  transform: scale(0.9);
 }
 
 .footer {
@@ -607,8 +652,19 @@
   padding: 0.83333vw 1.66667vw;
   background-color: #ffffff;
   border-radius: 0.34722vw;
+  box-shadow: 0 0.90278vw 1.38889vw 0 rgba(255, 255, 255, 0.04);
   font-size: 1.11111vw;
   color: #66BB6A;
+  transition: transform 0.4s cubic-bezier(0.33, 1.9, 0.52, 0.7), box-shadow 0.2s;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-btn:hover {
+  box-shadow: rgba(255, 255, 255, 0.09) 0 6px 9px 0;
+}
+
+.footer .footer-site-links-and-info .site-info .site-info-btn:active {
+  transition: transform .2s, box-shadow .2s;
+  transform: scale(0.9);
 }
 
 .footer .footer-site-links-and-info .site-info .site-info-btn .icon-user {

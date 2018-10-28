@@ -99,7 +99,6 @@
     }
   }
   
-
   .testimonial-arrow-btn-group {
     margin-top: responsive(36);
     margin-left: responsive(192);
@@ -114,17 +113,37 @@
     .testimonial-left-arrow-btn {
       margin-right: responsive(16);
       background-color: #66bb6a;
-      box-shadow: responsive(0) responsive(25) responsive(25) responsive(0) rgba(118, 196, 125, 0.31);
-      
+      box-shadow: responsive(0) responsive(15) responsive(20) responsive(0) rgba(118, 196, 125, 0.31);
+      transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), box-shadow .2s;
+
+      &:hover {
+        box-shadow: rgba(118, 196, 125, 0.31) 0 6px 9px 0;
+      }
+
+      &:active {
+        transition: transform .2s, box-shadow .2s;
+        transform: scale(.9);
+      }
+    
       .icon-arrow-left {
         font-size: responsive(24);
-        color: #b3dcb6;;
+        color: #b3dcb6;
       }
     }
 
     .testimonial-right-arrow-btn {
       background-color: #ffffff;
-	    box-shadow: responsive(-1) responsive(13) responsive(20) responsive(0) #f0f2f4;
+      box-shadow: responsive(0) responsive(15) responsive(20) responsive(0) #f0f2f4;
+      transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), box-shadow .2s;
+
+      &:hover {
+        box-shadow: #f0f2f4 0 6px 9px 0;
+      }
+
+      &:active {
+        transition: transform .2s, box-shadow .2s;
+        transform: scale(.9);
+      }
 
       .icon-arrow-right {
         font-size: responsive(24);

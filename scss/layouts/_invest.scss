@@ -4,14 +4,12 @@
   margin-top: responsive(84);
   margin-left: responsive(120);
   margin-right: responsive(120);
-  // padding-bottom: responsive(104);
   padding-left: responsive(72);
   padding-right: responsive(72);
 
   .invest-title {
     font-size: responsive(36);
     font-weight: bold;
-    letter-spacing: responsive(0);
     color: #000000;
   }
 
@@ -20,7 +18,6 @@
     width: responsive(704);
     font-size: responsive(18);
     line-height: responsive(32);
-    letter-spacing: responsive(0);
     color: #324148;
   }
 
@@ -72,7 +69,7 @@
         font-size: responsive(31);
         font-weight: bold;
         line-height: responsive(40);
-        letter-spacing: responsive(0);
+  
         color: #ffffff;
       }
 
@@ -82,7 +79,7 @@
         height: responsive(46);
         font-size: responsive(16);
         line-height: responsive(24);
-        letter-spacing: responsive(0);
+  
         color: #e2efd2;
       }
 
@@ -92,9 +89,20 @@
         height: responsive(48);
         background-color: #ffffff;
         border-radius: responsive(5);
+        box-shadow: 0 responsive(13) responsive(20) 0 rgba(255, 255, 255, .04);
         font-size: responsive(18);
-        letter-spacing: responsive(0);
+  
         color: #66bb6a;
+        transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), box-shadow .2s;
+
+        &:hover {
+          box-shadow: rgba(255, 255, 255, .09) 0 6px 9px 0;
+        }
+
+        &:active {
+          transition: transform .2s, box-shadow .2s;
+          transform: scale(.9);
+        }
       }
     }
   }

@@ -50,20 +50,25 @@
       width: responsive(128);
       height: responsive(48);
       border-radius: responsive(5);
-      border: solid responsive(1) #ffffff;
+      border: solid responsive(2) #ffffff;
       background-color: transparent;
       font-size: responsive(16);
       color: #f1f8e9;
+      transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), background-color .2s, color .2s;
 
-      .sign-up-icon {
-        display: inline-block;
-        vertical-align: middle;
+      &:hover {
+        background-color: #ffffff;
+        color: #66bb6a;
+      }
+
+      &:active {
+        transition: transform .2s;
+        transform: scale(.9);
+      }
+
+      .icon-user {
         margin-right: responsive(8);
-        width: responsive(16);
-        height: responsive(16);
-        background-image: url("../images/top/sign-up-icon.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
+        font-size: responsive(16);
       }
     }
   }
@@ -74,7 +79,6 @@
     font-size: responsive(46);
     font-weight: blod;
     line-height: responsive(64);
-    letter-spacing: responsive(0);
     color: #000000;
   }
 
@@ -83,7 +87,6 @@
     width: responsive(473);
     font-size: responsive(18);
     line-height: responsive(32);
-    letter-spacing: responsive(0);
     color: #263238;
   }
 
@@ -93,8 +96,18 @@
     height: responsive(48);
     background-color: #66bb6a;
     border-radius: responsive(5);
-    box-shadow: 0 responsive(13) responsive(20) 0 rgba(118,196,125,0.41);
+    box-shadow: 0 responsive(13) responsive(20) 0 rgba(118, 196, 125, 0.40);
     font-size: responsive(18);
     color: #ffffff;
+    transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), box-shadow .2s;
+
+    &:hover {
+      box-shadow: rgba(118, 196, 125, 0.60) 0 6px 9px 0;
+    }
+
+    &:active {
+      transition: transform .2s, box-shadow .2s;
+      transform: scale(.9);
+    }
   }
 }

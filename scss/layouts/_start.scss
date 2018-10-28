@@ -25,9 +25,19 @@
     width: responsive(269);
     height: responsive(48);
     background-color: #66bb6a;
-    box-shadow: 0 responsive(13) responsive(20) 0 rgba(118,196,125,0.41);
+    box-shadow: 0 responsive(13) responsive(20) 0 rgba(118, 196, 125, 0.41);
     border-radius: responsive(5);
     font-size: responsive(18);
     color: #ffffff;
+    transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), box-shadow .2s;
+
+    &:hover {
+      box-shadow: rgba(118, 196, 125, 0.60) 0 6px 9px 0;
+    }
+
+    &:active {
+      transition: transform .2s, box-shadow .2s;
+      transform: scale(.9);
+    }
   }
 }

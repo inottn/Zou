@@ -54,8 +54,19 @@
         padding: responsive(12) responsive(24);
         background-color: #ffffff;
         border-radius: responsive(5);
+        box-shadow: 0 responsive(13) responsive(20) 0 rgba(255, 255, 255, .04);
         font-size: responsive(16);
         color: #66BB6A;
+        transition: transform .4s cubic-bezier(.33, 1.9, .52, .7), box-shadow .2s;
+
+        &:hover {
+          box-shadow: rgba(255, 255, 255, .09) 0 6px 9px 0;
+        }
+
+        &:active {
+          transition: transform .2s, box-shadow .2s;
+          transform: scale(.9);
+        }
 
         .icon-user {
           margin-right: responsive(6);
