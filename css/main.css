@@ -664,4 +664,11 @@ a {
   text-decoration: none;
 }
 
+html {
+  background-image: url("../images/bg/bg1.png"), url("../images/bg/bg2.png"), url("../images/bg/bg3.png");
+  background-size: 11.59722vw, 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: 0 40.69444vw, left bottom, 0 56.94444vw;
+}
+
 /*# sourceMappingURL=main.css.map */
