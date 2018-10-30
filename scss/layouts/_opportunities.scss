@@ -49,6 +49,15 @@
       .opportunity-image {
         width: responsive(78);
         height: responsive(64);
+
+        .iconfont {
+          font-size:  responsive(60);
+          color: #66bb6a;
+        }
+
+        .icon-active {
+          color: #ffffff;
+        }
       }
 
       .opportunity-title {
