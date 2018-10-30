@@ -2,34 +2,34 @@ const testimonialLeftArrowBtn = document.querySelector('.testimonial-left-arrow-
       testimonialRightArrowBtn = document.querySelector('.testimonial-right-arrow-btn'),
       testimonialsList = document.querySelector('.testimonials-list')
 
-let index = 0, f = 0;
-
 Array.from(testimonialsList.children).forEach(function(item) {
   testimonialsList.appendChild(item.cloneNode(true))
 })
 
-testimonialLeftArrowBtn.addEventListener('click', function() {
-  index += 1;
+let index = 0,
+    step = 100 / testimonialsList.childElementCount
 
-  if ((index > 0 && (index - 3) % 4 === 0) || (index < 0 && (index + 2) % 4 === 0)) {
-    f -= 1;
-    testimonialsList.style.transform = `translateX(calc((100% - 100vw) / -2 + ${f * 50}%))`
+const transformTestimonialsList = function(direction = 'left') {
+  let sign = direction === 'left' ? 1 : -1
+  index += sign
+
+  if (index === sign * 3) {
+    index = sign * -2
+    testimonialsList.classList.add('testimonials-list-active')
+    testimonialsList.style.transform = `translateX(calc((100% - 100vw) / -2 + ${index * step}%))`
+    setTimeout(() => {
+      this.click()
+    }, 20)
+  } else {
+    testimonialsList.classList.remove('testimonials-list-active')
+    testimonialsList.style.transform = `translateX(calc((100% - 100vw) / -2 + ${index * step}%))`
   }
+}
 
-  Array.from(testimonialsList.children).forEach(function(item) {
-    item.style.transform = `translateX(${index * 110}%)`
-  })
+testimonialLeftArrowBtn.addEventListener('click', function() {
+  transformTestimonialsList.call(this, 'left')
 })
 
 testimonialRightArrowBtn.addEventListener('click', function() {
-  index -= 1;
-
-  if ((index < 0 && (index + 3) % 4 === 0) || (index > 0 && (index - 2) % 4 === 0)) {
-    f += 1;
-    testimonialsList.style.transform = `translateX(calc((100% - 100vw) / -2 + ${f * 50}%))`
-  }
-
-  Array.from(testimonialsList.children).forEach(function(item) {
-    item.style.transform = `translateX(${index * 110}%)`
-  })
+  transformTestimonialsList.call(this, 'right')
 })
