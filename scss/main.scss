@@ -8,23 +8,23 @@
 @import "./layouts/start";
 @import "./layouts/footer";
 
-// @font-face {
-//   font-family: Roboto;
-//   src: url("../font/Roboto-Regular.ttf");
-//   font-weight: normal;
-// }
+@font-face {
+  font-family: Chivo;
+  src: url("../font/Chivo-Light.ttf");
+  font-weight: 300;
+}
 
-// @font-face {
-//   font-family: Roboto;
-//   src: url("../font/Roboto-Medium.ttf");
-//   font-weight: 500;
-// }
+@font-face {
+  font-family: Chivo;
+  src: url("../font/Chivo-Regular.ttf");
+  font-weight: normal;
+}
 
-// @font-face {
-//   font-family: Roboto;
-//   src: url("../font/Roboto-Bold.ttf");
-//   font-weight: bold;
-// }
+@font-face {
+  font-family: Chivo;
+  src: url("../font/Chivo-Bold.ttf");
+  font-weight: bold;
+}
 
 * {
   box-sizing: border-box;
